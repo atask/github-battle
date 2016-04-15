@@ -14,6 +14,7 @@
   "author": "Allan Taschini <allan.taschini@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.9.1",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "react-router": "^2.1.1"
