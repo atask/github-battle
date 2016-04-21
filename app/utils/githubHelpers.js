@@ -1,12 +1,8 @@
 var axios = require('axios')
 
-var id = 'CLIENT_ID'
-var sec = 'CLIENT_SECRET'
+var id = 'a86369e796f9d3062081'
+var sec = 'fe4bead875bfeb7325da14950e2b6da858c09794'
 var param = '?client_id=' + id + '&client_secret=' + sec
-
-function getUserInfo (username) {
-  return axios.get('https://api.github.com/users/' + username + param)
-}
 
 function getUserInfo (username) {
   return axios.get('https://api.github.com/users/' + username + param)
@@ -57,7 +53,7 @@ var helpers = {
     var playerTwoData = getPlayersData(players[1])
     return axios.all([playerOneData, playerTwoData])
       .then(calculateScores)
-      .catch(function (err) {console.warn('Error in getPlayersInfo: ', err)})
+      .catch(function (err) { console.warn('Error in getPlayersInfo: ', err) })
   }
 }
 
